@@ -8,6 +8,7 @@ if __name__ == "__main__":
     if len(sys.argv) == 3:
         distance = float(sys.argv[1])
         time = float(sys.argv[2])
+        calculate_speed(distance, time)
     else:
         # Else take user input
         distance = float(input("Enter distance (km): "))
@@ -18,3 +19,4 @@ if __name__ == "__main__":
     else:
         speed = calculate_speed(distance, time)
         print(f"Speed = {speed} km/hr")
+        
